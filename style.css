@@ -1,0 +1,49 @@
+html {
+  background-color: rgb(191, 240, 191);
+}
+body {
+  background-color: rgb(160, 202, 104);
+  width: 700px;
+  margin: auto;
+  padding: 30px 30px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+hr {
+  border: 2px solid rgb(92, 109, 83);
+}
+img {
+  margin-top: 30px;
+  width: 300px;
+  border: 2px solid rgb(77, 117, 55);
+}
+.instructions-headers {
+  font-size: large;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+.mini-numbers {
+  font-size: small;
+}
+
+button {
+  width: 180px;
+  height: 50px;
+  border: 2px solid rgb(77, 117, 55);
+  background-color: rgb(160, 220, 203);
+  font-weight: bold;
+  color: rgb(16, 46, 37);
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+#total-mag-btn {
+  width: auto;
+}
+#result {
+  font-size: large;
+}

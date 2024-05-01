@@ -1,0 +1,130 @@
+<html id="the-html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microscope Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="the-body">
+    <!-- Title -->
+    <h1 id="top-header">Microscope Calculator</h1>
+    <p>
+      <hr id="the-upper-line">
+      <img
+        id="image-of-calclator-type"
+        src="images/Microscope.jpg"
+        alt="Compound Microscope"
+      />
+    </p>
+
+    <!-- Instruction Headers -->
+    <p class="instructions-headers" id="main-instructions">
+      Choose which one of the following calculators you would like to use :
+    </p>
+    <p class="instructions-headers" id="total-mag-instructions-headers">
+      A compound microscope is composed of two lenses. Its total magnification
+      is how much resolving power it holds. The formula for total magnification
+      is : <br/> M<span class="mini-numbers">tot</span> = M<span class="mini-numbers"
+        >e</span
+      >
+      x M<span class="mini-numbers">o</span>
+    </p>
+    <p class="instructions-headers" id="image-mag-instructions-headers">
+      Image magnification is how much larger the image is than the object. The
+      formula for image magnification = h<span class="mini-numbers">i</span> /
+      h<span class="mini-numbers">o</span>
+    </p>
+    <p class="instructions-headers" id="scale-bar-instructions-headers">
+      The scale bar in a microscope drawing is a visual representation of the
+      length of the object being studied. Its formula is : <br/> Scale bar = h<span
+        class="mini-numbers"
+        >o</span
+      >
+      / h<span class="mini-numbers">i</span>
+    </p>
+    <p class="instructions-headers" id="fov-instructions-headers">
+      The field of view of a lens is the diameter of the illuminated area seen
+      through the eyepiece. Its formula is : <br/> fov<span class="mini-numbers"
+        >b</span
+      >
+      = M<span class="mini-numbers">a</span> x fov<span class="mini-numbers"
+        >a</span
+      >
+      / M<span class="mini-numbers">b</span>
+    </p>
+    <p class="instructions-headers" id="obj-length-instructions-header">
+      Object length is basically the size of the specimen being studied. Its
+      formula is : <br/> Object Length = fov / fit #
+    </p>
+    <h2 id="second-header">Inputs</h2>
+
+    <!-- Total magnification -->
+    <p id="occular-mag">
+      Occular power (M<span class="mini-numbers">e</span>) :
+      <input id="occular-mag-in" type="text" />
+    </p>
+    <p id="obj-mag1">
+      Objective power A (M<span class="mini-numbers">o</span>) :
+      <input id="obj-mag-in" type="text" />
+    </p>
+
+    <!-- Field of view -->
+    <p id="total-mag-A">
+      Total Magnification A (M<span class="mini-numbers">a</span>) :
+      <input id="tot-mag1-in" type="text" />
+    </p>
+    <p id="field-diameter1">
+      Field of view A (fov<span class="mini-numbers">a</span>) :
+      <input id="first-fov-in" type="text" />
+    </p>
+    <p id="total-mag-B">
+      Total Magnification B (M<span class="mini-numbers">b</span>) :
+      <input id="tot-mag2-in" type="text" />
+    </p>
+
+    <!-- Scale bar and image magnification -->
+    <p id="img-height">
+      Height of image (h<span class="mini-numbers">i</span> ) :
+      <input id="img-height-in" type="text" />
+    </p>
+    <p id="obj-height">
+      Height of object (h<span class="mini-numbers">o</span>) :
+      <input id="obj-height-in" type="text" />
+      
+    </p>
+
+    <!-- Object size -->
+    <p id="fit-number-fov">
+      Field of view (fov) : <input id="fit-num-fov-in" type="text" />
+    </p>
+    <p id="fit-number">
+      Fit Number (Fit #) : <input id="fit-num-in" type="text" />
+    </p>
+
+    <!-- buttons -->
+    <div id="btn-container">
+      <p id="top-btns">
+        <button id="total-mag-btn">Total Magnification of Microscope</button>
+        <button id="img-mag-btn">Magnification of Image</button>
+        <button id="scale-bar-btn">Scale Bar</button>
+      </p>
+      <p id="bottom-btns">
+        <button id="fov-btn">Field of view</button>
+        <button id="obj-length-btn">Object Length</button>
+      </p>
+      <p>
+        <button id="return-btn">Go Back</button>
+      </p>
+    </div>
+
+    <h2 id="result-header">Output</h2>
+    <p id="result">The answer is ---</p>
+  </body>
+</html>
